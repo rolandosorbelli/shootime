@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+  color: beige;
+}
+
+body {
+  z-index: -9999;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.background {
+  background: #0f192b; /* fallback for old browsers */
+  background: linear-gradient(rgb(15, 25, 43, 0.9), rgb(52, 53, 78, 0.9)),
+    url("../img/background.jpg"); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgb(15, 25, 43, 0.9), rgb(52, 53, 78, 0.9)),
+    url("../img/background.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  z-index: 9999;
+  width: 75%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.content-text h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px beige;
+  display: inline-block;
+}
+
+.content-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: beige;
+  border: 1px solid beige;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-39:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
