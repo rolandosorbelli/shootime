@@ -13,9 +13,9 @@ body {
 .background {
   background: #0f192b; /* fallback for old browsers */
   background: linear-gradient(rgb(15, 25, 43, 0.9), rgb(52, 53, 78, 0.9)),
-    url("../img/background.jpg"); /* Chrome 10-25, Safari 5.1-6 */
+    url("/../img/background.jpg"); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(rgb(15, 25, 43, 0.9), rgb(52, 53, 78, 0.9)),
-    url("../img/background.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url("/../img/background.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-repeat: no-repeat;
 }
