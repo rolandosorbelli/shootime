@@ -24,7 +24,7 @@ body {
   z-index: 9999;
   width: 75%;
   margin: 0 auto;
-  height: 100vh;
+  height: 93vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,4 +82,16 @@ body {
 
 .button-39:focus-visible {
   box-shadow: none;
+}
+
+footer {
+  width: 75%;
+  margin: 0 auto;
+  height: 7vh;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer p {
+  padding-bottom: 0.5rem;
 }
