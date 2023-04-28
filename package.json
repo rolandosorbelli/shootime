@@ -1,18 +1,22 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Shootime",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "360 Virtual Tours",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rolando Sorbelli",
   "dependencies": {
     "gatsby": "^5.7.0",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
+    "gatsby-plugin-sass": "^6.9.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "prettier": "^2.8.4"
