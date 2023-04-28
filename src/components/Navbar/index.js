@@ -1,4 +1,5 @@
 import React from 'react'
+import { document } from 'browser-monads'
 
 import './index.scss'
 
@@ -8,7 +9,6 @@ const Navbar = () => {
 
   navToggle &&
     navToggle.addEventListener('click', () => {
-      console.log('FIRE!')
       const visibility = primaryNav.getAttribute('data-visible')
 
       if (visibility === 'false') {
