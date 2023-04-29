@@ -9,6 +9,7 @@ import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './Header'
+import Hero from './Hero'
 import './layout.css'
 
 const Layout = ({ children }) => {
@@ -35,6 +36,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <Hero />
     </>
   )
 }
