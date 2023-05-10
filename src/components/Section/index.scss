@@ -7,6 +7,26 @@
     background-position: center;
     aspect-ratio: 1/1;
   }
+
+  & .section-text {
+    padding: 2rem;
+
+    & h2 {
+      font-size: var(--font-size-l);
+      font-weight: var(--font-weight-bold);
+      font-family: var(--font-sans);
+      margin-bottom: 1.5rem;
+    }
+
+    & p {
+      font-size: var(--font-size-sm);
+      font-family: var(--font-serif);
+    }
+
+    & p:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @media (min-width: 80em) {
@@ -25,4 +45,36 @@
 
 .image3 {
   background: url(../../images/EPC.jpg);
+}
+
+.light-section {
+  background-color: var(--color-light);
+  & h2 {
+    color: var(--color-secondary);
+  }
+
+  & p {
+    color: var(--color-dark);
+  }
+}
+
+.dark-section {
+  background-color: var(--color-dark);
+  & h2 {
+    color: var(--color-secondary);
+  }
+
+  & p {
+    color: var(--color-light);
+  }
+}
+
+.secondary-section {
+  background-color: var(--color-secondary);
+  & h2 {
+    color: var(--color-dark);
+  }
+  & p {
+    color: var(--color-light);
+  }
 }

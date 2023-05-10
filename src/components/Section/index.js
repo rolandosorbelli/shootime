@@ -2,14 +2,16 @@ import React from 'react'
 
 import './index.scss'
 
-const ImageDivider = ({ title, content, imageSrc }) => {
-  console.log(imageSrc)
+const ImageDivider = ({ title, content, imageSrc, style }) => {
+  console.log(content)
   return (
     <div className="section-container">
       <div className={`background ${imageSrc}`}></div>
-      <div className="section-text">
+      <div className={`section-text ${style}`}>
         <h2>{title}</h2>
-        <p>{content}</p>
+        {content?.map((paraghraph, key) => (
+          <p key={key}>{paraghraph}</p>
+        ))}
       </div>
     </div>
   )
