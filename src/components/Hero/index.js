@@ -1,4 +1,5 @@
 import React from 'react'
+import buttonArrow from '../../images/hero-button-icon.png'
 
 import './index.scss'
 
@@ -23,7 +24,9 @@ const Hero = () => {
         strong background in photography, construction, architectural survey and
         project management.
       </p>
-      <button>GET A QUOTE</button>
+      <button>
+        <span>GET A QUOTE</span> <img src={buttonArrow}></img>{' '}
+      </button>
     </div>
   )
 }
