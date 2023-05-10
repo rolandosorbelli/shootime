@@ -1,0 +1,28 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+
+  & .background {
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (min-width: 80em) {
+  .section-container {
+    flex-direction: row;
+  }
+}
+
+.image1 {
+  background: url(../../images/360\ virtual\ tour.png);
+}
+
+.image2 {
+  background: url(../../images/matterport.png);
+}
+
+.image3 {
+  background: url(../../images/EPC.jpg);
+}

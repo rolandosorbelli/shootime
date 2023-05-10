@@ -39,16 +39,13 @@ const Navbar = () => {
             <a href="/">360 Virtual Tours</a>
           </li>
           <li className="active">
-            <a href="/">3D Scanning</a>
+            <a href="/">Matterport</a>
           </li>
           <li className="active">
             <a href="/">Domestic EPC</a>
           </li>
           <li className="active">
-            <a href="/">Commercial Photograpghy</a>
-          </li>
-          <li className="active">
-            <a href="/">About</a>
+            <a href="/">About & FAQ</a>
           </li>
           <li className="active">
             <a href="/">Contact</a>

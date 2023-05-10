@@ -1,9 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
+// import image1 from './src/images/360 virtual tour.png'
+// import image2 from './src/images/matterport.png'
+// import image3 from './src/images/EPC.jpg'
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -14,6 +11,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+
   plugins: [
     `gatsby-plugin-image`,
     {
