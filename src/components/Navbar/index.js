@@ -36,19 +36,19 @@ const Navbar = () => {
           className="primary-navigation flex"
         >
           <li className="active">
-            <a href="/">360 Virtual Tours</a>
+            <a href="#section-1">360 Virtual Tours</a>
           </li>
           <li className="active">
-            <a href="/">Matterport</a>
+            <a href="#section-2">Matterport</a>
           </li>
           <li className="active">
-            <a href="/">Domestic EPC</a>
+            <a href="#section-3">Domestic EPC</a>
           </li>
           <li className="active">
-            <a href="/">About & FAQ</a>
+            <a href="#section-4">About & FAQ</a>
           </li>
           <li className="active">
-            <a href="/">Contact</a>
+            <a href="#section-5">Contact</a>
           </li>
         </ul>
       </nav>

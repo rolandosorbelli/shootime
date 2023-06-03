@@ -8,7 +8,7 @@ import './index.scss'
 const Header = ({ siteTitle }) => (
   <header className="primary-header flex">
     <Link to="/">
-      <img src={logo} alt="example" />
+      <img src={logo} alt={`${siteTitle} logo`} />
     </Link>
 
     <Navbar />
