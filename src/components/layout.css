@@ -150,3 +150,15 @@ input[type='reset'] {
   width: auto !important;
   white-space: normal !important;
 }
+
+footer {
+  padding: 2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}
+footer p {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-sans);
+  line-height: 1.8rem;
+  text-align: center;
+}

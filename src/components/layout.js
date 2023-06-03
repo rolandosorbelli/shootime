@@ -46,6 +46,10 @@ const Layout = ({ children }) => {
       ))}
       <Faq content={faqs.faqs.content} />
       <Contact />
+      <footer>
+        <p>&copy; Copyright {new Date().getFullYear()}, Shootime.co.uk</p>
+        <p>All Rights Reserved</p>
+      </footer>
     </>
   )
 }

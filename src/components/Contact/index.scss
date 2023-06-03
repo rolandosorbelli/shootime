@@ -148,20 +148,25 @@ input[type='submit'],
 }
 
 .contact-subheading {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 3rem;
-  & h3 {
-    font-size: var(--font-size-l);
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-sans);
-    color: var(--color-light);
-    margin-bottom: 1.5rem;
-  }
-  & h3:last-of-type {
-    color: var(--color-secondary);
+  display: none;
+  @media (min-width: 80em) {
+    flex: 1;
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    & h3 {
+      font-size: var(--font-size-l);
+      font-weight: var(--font-weight-bold);
+      font-family: var(--font-sans);
+      color: var(--color-light);
+      margin-bottom: 1.5rem;
+    }
+    & h3:last-of-type {
+      color: var(--color-secondary);
+    }
   }
 }
 
