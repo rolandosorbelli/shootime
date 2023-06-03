@@ -5,6 +5,7 @@ import Header from './Header'
 import Hero from './Hero'
 import Section from './Section'
 import './layout.css'
+import Faq from './Faq'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
           key={key}
         />
       ))}
+      <Faq content={faqs.faqs.content} />
     </>
   )
 }
@@ -84,4 +86,31 @@ export const sections = {
       inverted: false,
     },
   ],
+}
+
+export const faqs = {
+  faqs: {
+    content: [
+      {
+        question: 'HOW LONG DOES IT TAKE TO RECEIVE THE DIGITAL TWIN?',
+        answer:
+          'This is the biggest factor. Larger models take longer to process. A model with only 1 or 2 scans may finish in 30 minutes, while a model with 200+ scans may take 24 to 48 hours. Models with difficult geometry also require more time to process.',
+      },
+      {
+        question: 'CAN YOU USE MATTERPORT OUTSIDE?',
+        answer:
+          'Of course we can but outside scanning must be requested prior our attendance since this will affect the equipment in use for scanning between the Matterport Pro2 or Pro3 camera.',
+      },
+      {
+        question: 'HOW ACCURATE IS MATTERPORT?',
+        answer: 'Matterport accuracy will depends from the camera choice:',
+        list: [
+          '360 cameras: no measurements available, only for visual tours',
+          'Matterport: Pro2 accuracy within 1%',
+          'Matterport: Pro3 (Lidar) accuracy +/- 20mm @10m',
+          'Leica BLK360: G1 (Lidar-based camera) accuracy within 0.1%',
+        ],
+      },
+    ],
+  },
 }
