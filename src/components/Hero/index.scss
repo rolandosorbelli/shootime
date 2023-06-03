@@ -3,7 +3,6 @@
   font-family: var(--font-sans);
   position: relative;
   border-bottom: 10px solid var(--color-secondary);
-  height: calc(100vh - 6.5rem);
 
   & h1 {
     font-size: var(--font-size-l);
@@ -73,13 +72,21 @@ video {
 
 @media (min-width: 65em) {
   .hero-container {
-    // height: 70vh;
-    & h1 {
-      font-size: var(--font-size-xl);
-    }
+    height: calc(100vh - 6.5rem);
 
-    & p {
-      width: 50%;
+    &__content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+
+      & h1 {
+        font-size: var(--font-size-xl);
+      }
+
+      & p {
+        width: 50%;
+      }
     }
   }
 
