@@ -2,10 +2,20 @@ import React from 'react'
 
 import './index.scss'
 
-const ImageDivider = ({ title, content, imageSrc, style, position }) => {
+const ImageDivider = ({
+  title,
+  content,
+  imageSrc,
+  style,
+  position,
+  inverted,
+}) => {
   console.log(content)
   return (
-    <div className="section-container" id={`section-${position}`}>
+    <div
+      className={`section-container ${inverted ? 'inverted' : ''}`}
+      id={`section-${position}`}
+    >
       <div className={`background ${imageSrc}`}></div>
       <div className={`section-text ${style}`}>
         <h2>{title}</h2>

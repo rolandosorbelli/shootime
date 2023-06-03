@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
           imageSrc={section.image}
           style={section.style}
           position={section.position}
+          inverted={section.inverted}
           key={key}
         />
       ))}
@@ -58,6 +59,7 @@ export const sections = {
       image: 'image1',
       style: 'light-section',
       position: 1,
+      inverted: false,
     },
     {
       title: 'Matterport',
@@ -68,6 +70,7 @@ export const sections = {
       image: 'image2',
       style: 'dark-section',
       position: 2,
+      inverted: true,
     },
     {
       title: 'Domestic Energy Performance Certificates',
@@ -78,6 +81,7 @@ export const sections = {
       image: 'image3',
       style: 'secondary-section',
       position: 3,
+      inverted: false,
     },
   ],
 }

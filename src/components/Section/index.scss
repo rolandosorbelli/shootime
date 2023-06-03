@@ -33,6 +33,30 @@
 @media (min-width: 80em) {
   .section-container {
     flex-direction: row;
+    height: 600px;
+
+    & .section-text {
+      padding: 6rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      & h2 {
+        font-size: var(--font-size-xl);
+      }
+
+      & p {
+        font-size: var(--font-size-m);
+        line-height: 2rem;
+      }
+
+      & p:first-of-type {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  .inverted {
+    flex-direction: row-reverse;
   }
 }
 

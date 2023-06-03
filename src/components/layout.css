@@ -52,6 +52,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   overflow-x: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* A elements that don't have a class get default styles */
