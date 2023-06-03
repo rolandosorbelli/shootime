@@ -3,7 +3,7 @@
   font-family: var(--font-sans);
   position: relative;
   border-bottom: 10px solid var(--color-secondary);
-  // height: 50vh;
+  height: calc(100vh - 6.5rem);
 
   & h1 {
     font-size: var(--font-size-l);
@@ -45,6 +45,18 @@
 
     & img {
       margin-left: 1rem;
+    }
+  }
+
+  & .ct-btn-scroll {
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 20px);
+
+    & img {
+      width: 40px;
+      height: 40px;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import buttonArrow from '../../images/hero-button-icon.png'
+import scrollDown from '../../images/scroll-down.svg'
 
 import './index.scss'
 
@@ -27,6 +28,9 @@ const Hero = () => {
       <button>
         <span>GET A QUOTE</span> <img src={buttonArrow}></img>{' '}
       </button>
+      <a class="ct-btn-scroll" href="#section-1">
+        <img alt="Arrow Down Icon" src={scrollDown} />
+      </a>
     </div>
   )
 }

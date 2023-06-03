@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
           content={section.content}
           imageSrc={section.image}
           style={section.style}
+          position={section.position}
           key={key}
         />
       ))}
@@ -56,6 +57,7 @@ export const sections = {
       ],
       image: 'image1',
       style: 'light-section',
+      position: 1,
     },
     {
       title: 'Matterport',
@@ -65,6 +67,7 @@ export const sections = {
       ],
       image: 'image2',
       style: 'dark-section',
+      position: 2,
     },
     {
       title: 'Domestic Energy Performance Certificates',
@@ -74,6 +77,7 @@ export const sections = {
       ],
       image: 'image3',
       style: 'secondary-section',
+      position: 3,
     },
   ],
 }
