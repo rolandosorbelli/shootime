@@ -6,6 +6,7 @@ import Hero from './Hero'
 import Section from './Section'
 import './layout.css'
 import Faq from './Faq'
+import Contact from './Contact'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -44,6 +45,7 @@ const Layout = ({ children }) => {
         />
       ))}
       <Faq content={faqs.faqs.content} />
+      <Contact />
     </>
   )
 }
