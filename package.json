@@ -6,6 +6,7 @@
   "author": "Rolando Sorbelli",
   "dependencies": {
     "browser-monads": "^1.0.0",
+    "framer-motion": "^10.12.16",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.7.0",

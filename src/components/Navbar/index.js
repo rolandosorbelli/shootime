@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { document } from 'browser-monads'
+import { motion } from 'framer-motion'
 
 import './index.scss'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   const primaryNav = document.querySelector('.primary-navigation')
   const navToggle = document.querySelector('.mobile-nav-toggle')
 
@@ -14,11 +17,17 @@ const Navbar = () => {
       if (visibility === 'false') {
         primaryNav.setAttribute('data-visible', 'true')
         navToggle.setAttribute('aria-expanded', 'true')
+        setIsOpen(true)
       } else if (visibility === 'true') {
         primaryNav.setAttribute('data-visible', 'false')
         navToggle.setAttribute('aria-expanded', 'false')
+        setIsOpen(false)
       }
     })
+
+  const motionVariants = {
+    onHover: { color: '#e25643' },
+  }
 
   return (
     <>
@@ -36,19 +45,49 @@ const Navbar = () => {
           className="primary-navigation flex"
         >
           <li className="active">
-            <a href="#section-1">360 Virtual Tours</a>
+            <motion.a
+              variants={motionVariants}
+              whileHover={!isOpen && 'onHover'}
+              href="#section-1"
+            >
+              360 Virtual Tours
+            </motion.a>
           </li>
           <li className="active">
-            <a href="#section-2">Matterport</a>
+            <motion.a
+              variants={motionVariants}
+              whileHover={!isOpen && 'onHover'}
+              href="#section-2"
+            >
+              Matterport
+            </motion.a>
           </li>
           <li className="active">
-            <a href="#section-3">Domestic EPC</a>
+            <motion.a
+              variants={motionVariants}
+              whileHover={!isOpen && 'onHover'}
+              href="#section-3"
+            >
+              Domestic EPC
+            </motion.a>
           </li>
           <li className="active">
-            <a href="#section-4">About & FAQ</a>
+            <motion.a
+              variants={motionVariants}
+              whileHover={!isOpen && 'onHover'}
+              href="#section-4"
+            >
+              About & FAQ
+            </motion.a>
           </li>
           <li className="active">
-            <a href="#section-5">Contact</a>
+            <motion.a
+              variants={motionVariants}
+              whileHover={!isOpen && 'onHover'}
+              href="#section-5"
+            >
+              Contact
+            </motion.a>
           </li>
         </ul>
       </nav>
