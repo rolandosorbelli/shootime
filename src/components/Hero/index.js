@@ -27,7 +27,10 @@ const Hero = () => {
           and project management.
         </p>
         <button>
-          <span>GET A QUOTE</span> <img src={buttonArrow}></img>{' '}
+          <a href="mailto:studio@shootime.co.uk?subject=Quote%20request">
+            GET A QUOTE
+          </a>
+          <img src={buttonArrow}></img>
         </button>
       </div>
 
