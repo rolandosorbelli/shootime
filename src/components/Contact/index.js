@@ -8,7 +8,13 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="contact__form">
         <div className="inner">
-          <form method="post" name="contact" netlify netlify-honeypot="bot">
+          <form
+            method="post"
+            name="contact"
+            netlify
+            netlify-honeypot="bot"
+            data-netlify="true"
+          >
             <input type="hidden" name="form-name" value="contact" />
             <div className="field__hidden">
               <label htmlFor="bot">Do not fill</label>
