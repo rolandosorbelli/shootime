@@ -58,6 +58,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-postcss',
+    `gatsby-plugin-material-ui`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
