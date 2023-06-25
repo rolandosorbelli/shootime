@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import Navbar from '../Navbar'
-import logo from '../../images/shootime2.svg'
+import logo from '../../images/shootime3.svg'
 import noSlogan from '../../images/no-slogan.svg'
 
 import './index.scss'
