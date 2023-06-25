@@ -6,10 +6,6 @@ import './index.scss'
 const Navbar = () => {
   const [toggled, setToggled] = useState(false)
 
-  const motionVariants = {
-    onHover: { color: '#e25643' },
-  }
-
   const navMotion = {
     visible: {
       opacity: 1,
@@ -27,6 +23,7 @@ const Navbar = () => {
   const itemMotion = {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: -100 },
+    onHover: { color: '#e25643' },
   }
   const itemMotionDesktop = {
     visible: { opacity: 1, x: 0 },
@@ -49,6 +46,7 @@ const Navbar = () => {
           variants={isMobile ? itemMotion : itemMotionDesktop}
           href={href}
           onClick={() => isMobile && setToggled((prevToggle) => !prevToggle)}
+          className={!isMobile && `hover:text-[#e25742]`}
         >
           {name}
         </motion.a>
@@ -65,7 +63,7 @@ const Navbar = () => {
             variants={navMotion}
             animate="visible"
             initial="hidden"
-            className="fixed right-0 top-0 z-100 flex h-screen w-full md:w-1/2 flex-col items-center justify-center bg-[#e25742] primary-navigation"
+            className="fixed right-0 top-0 z-100 flex h-screen w-full md:w-1/2 flex-col items-center justify-center bg-[#e25742] text-center primary-navigation"
           >
             <NavLinks
               className="flex flex-col gap-24 text-lg"
@@ -79,7 +77,7 @@ const Navbar = () => {
           transition={{ delay: 0.35 }}
           className="hidden lg:flex lg:items-center lg:justify-center primary-navigation"
         >
-          <NavLinks className="flex gap-12" isMobile={false} />
+          <NavLinks className="flex gap-20" isMobile={false} />
         </motion.div>
 
         {/* Hamburger Toggle */}
