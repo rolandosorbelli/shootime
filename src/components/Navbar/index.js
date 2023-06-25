@@ -66,7 +66,7 @@ const Navbar = () => {
             className="fixed right-0 top-0 z-100 flex h-screen w-full md:w-1/2 flex-col items-center justify-center bg-[#e25742] text-center primary-navigation"
           >
             <NavLinks
-              className="flex flex-col gap-24 text-lg"
+              className="flex flex-col gap-24 text-lg text-center"
               isMobile={true}
             />
           </motion.div>
