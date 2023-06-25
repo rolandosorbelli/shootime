@@ -55,5 +55,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-postcss',
+    `gatsby-plugin-material-ui`,
   ],
 }
