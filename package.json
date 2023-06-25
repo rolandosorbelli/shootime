@@ -1,7 +1,7 @@
 {
   "name": "Shootime",
   "private": true,
-  "description": "360 Virtual Tours",
+  "description": "Shootime Ltd",
   "version": "0.1.0",
   "author": "Rolando Sorbelli",
   "dependencies": {
@@ -16,8 +16,10 @@
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.9.0",
     "gatsby-plugin-sharp": "^5.7.0",
+    "gatsby-plugin-sitemap": "^6.11.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.2.0",

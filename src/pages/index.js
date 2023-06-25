@@ -6,6 +6,6 @@ import * as styles from '../components/index.module.css'
 
 const IndexPage = () => <Layout></Layout>
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Shootime" />
 
 export default IndexPage

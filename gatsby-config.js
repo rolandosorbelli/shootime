@@ -4,12 +4,15 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const siteUrl = process.env.URL || `https://www.shootime.co.uk/`
+
 module.exports = {
   siteMetadata: {
     title: `Shootime`,
-    description: `360 Virtual Tours`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `London based company, Shootime Ltd is specialised in 360 photography, 3D digital twins and EPC.`,
+    author: `Rolando Sorbelli`,
+    siteUrl: `https://www.shootime.co.uk/`,
+    keywords: `Shootime, Matterport, Matterport survey, Matterport service, Matterport scan, London Matterport, Kensington Matterport, Chelsea Matterport, Knightsbridge Matterport, Mayfair Matterport, UK Matterport, United Kingdom Matterport, digital twin, digital twins, London digital twin, Kensington digital twin, Chelsea digital twin, Knightsbridge digital twin, Mayfair digital twin, UK digital twin, United Kingdom digital twin, Virtual tour, Virtual tours, 360, 360 Virtual tour, 360 Virtual tours, Virtual tour service, London Virtual tour, Kensington Virtual tour, Chelsea Virtual tour, Knightsbridge Virtual tour, Mayfair Virtual tour, UK Virtual tour, United Kingdom Virtual tour, professional virtual tour, professional virtual tours, professional 360 scan, professional survey, professional matterport scan, professional photgraphy, Survey, Real estate, Real estates, real estate marketing, residential, residential real estate, commercial, commercial real estate, retail, travel, hospitality, homeowners, insurance, restoration, facilities management, manufacturing, public sector, government, photography, 3d photography, 3d scan, 3d model, construction, construction survey, construct, 360 photography, London, Kensington, Chelsea, Knightsbridge, Mayfair, UK, United Kingdom, AI, Artificial intelligence, 3d walkthrough, 360 walkthrough, reality capture, capture services, property capture, virtual reality, luxury properties, luxury property, high-end property, high-end properties, leica, leica scanner, leica BLK 360, matterport pro, matterport pro2, matterport pro3, energy performance certificate, London energy performance certificate, Kensington energy performance certificate, Chelsea energy performance certificate, Knightsbridge energy performance certificate, Mayfair energy performance certificate, UK energy performance certificate, United Kingdom energy performance certificate, domestic energy performance certificate, London domestic energy performance certificate, Kensington domestic energy performance certificate, Chelsea domestic energy performance certificate, Knightsbridge domestic energy performance certificate, Mayfair domestic energy performance certificate, UK domestic energy performance certificate, United Kingdom domestic energy performance certificate`,
   },
 
   plugins: [
@@ -56,5 +59,39 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
     `gatsby-plugin-material-ui`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.shootime.co.uk',
+        sitemap: 'https://www.shootime.co.uk/sitemap-0.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          }
+        },
+      },
+    },
   ],
 }
