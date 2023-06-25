@@ -10,7 +10,7 @@ const Faq = ({ content }) => {
         <h2>About & FAQs</h2>
         {content?.map((faq, key) => (
           <Fragment key={key}>
-            <h3>Q: {faq.question}</h3>
+            <h3>Q: {faq.question.toUpperCase()}</h3>
             <p>{faq.answer}</p>
             <ul>
               {faq?.list?.map((li, key) => (
