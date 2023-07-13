@@ -36,10 +36,10 @@ const Footer = ({}) => {
           <div className="footer-upper__right-legal">
             <h4>Legal</h4>
             <p>
-              <a href="/">Privacy Policy</a>
+              <a href="/privacy">Privacy Policy</a>
             </p>
             <p>
-              <a href="/">Cookies Policy</a>
+              <a href="/cookies">Cookies Policy</a>
             </p>
           </div>
         </div>

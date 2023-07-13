@@ -157,3 +157,47 @@ input[type='reset'] {
   width: auto !important;
   white-space: normal !important;
 }
+
+.policy-outer {
+  padding: 6rem;
+  background-color: var(--color-light);
+  line-height: 200%;
+}
+
+.policy-outer h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+}
+
+.policy-outer h2 {
+  font-size: var(--font-size-l);
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.policy-outer p,
+ul {
+  font-size: var(--font-size-m);
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.policy-outer ul {
+  list-style-type: circle;
+  margin-left: 1.5rem;
+}
+
+.policy-outer a {
+  color: var(--color-secondary);
+  font-style: italic;
+}
+
+.policy-outer a:hover {
+  text-decoration: underline;
+}
+
+.policy-outer p:has(+ h2),
+ul:has(+ h2) {
+  margin-bottom: 2rem;
+}

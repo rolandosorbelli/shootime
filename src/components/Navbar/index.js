@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import './index.scss'
 
-const Navbar = () => {
+const Navbar = ({ isIndex }) => {
   const [toggled, setToggled] = useState(false)
 
   const navMotion = {
@@ -31,11 +31,31 @@ const Navbar = () => {
   }
 
   const navLinks = [
-    { name: '360 Virtual Tours', href: '#section-1', id: 'section-1' },
-    { name: 'Matterport', href: '#section-2', id: 'section-2' },
-    { name: 'Domestic EPC', href: '#section-3', id: 'section-3' },
-    { name: 'About & FAQ', href: '#section-4', id: 'section-4' },
-    { name: 'Contact', href: '#section-5', id: 'section-5' },
+    {
+      name: '360 Virtual Tours',
+      href: `${isIndex ? '#section-1' : '/#section-1'}`,
+      id: 'section-1',
+    },
+    {
+      name: 'Matterport',
+      href: `${isIndex ? '#section-2' : '/#section-2'}`,
+      id: 'section-2',
+    },
+    {
+      name: 'Domestic EPC',
+      href: `${isIndex ? '#section-3' : '/#section-3'}`,
+      id: 'section-3',
+    },
+    {
+      name: 'About & FAQ',
+      href: `${isIndex ? '#section-4' : '/#section-4'}`,
+      id: 'section-4',
+    },
+    {
+      name: 'Contact',
+      href: `${isIndex ? '#section-5' : '/#section-5'}`,
+      id: 'section-5',
+    },
   ]
 
   const NavLinks = ({ isMobile, className }) => (
