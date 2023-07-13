@@ -15,10 +15,14 @@
 
 .primary-header {
   background-color: white;
-  padding: 2rem 6rem;
+  padding: 2rem;
   z-index: 9999;
   position: sticky;
   top: 0;
+
+  @media (min-width: 65em) {
+    padding: 2rem 6rem;
+  }
 }
 
 header {
