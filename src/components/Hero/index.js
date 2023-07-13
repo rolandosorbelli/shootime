@@ -1,6 +1,5 @@
 import React from 'react'
 import buttonArrow from '../../images/hero-button-icon.png'
-import scrollDown from '../../images/scroll-down.svg'
 
 import './index.scss'
 
@@ -10,7 +9,7 @@ const Hero = () => {
       <>
         <video playsInline autoPlay muted loop id="bgvid">
           <source
-            src="https://shootime.s3.eu-west-2.amazonaws.com/videobg.mp4"
+            src="https://shootime.s3.eu-west-2.amazonaws.com/videobg-3.mp4"
             type="video/mp4"
           />
         </video>
