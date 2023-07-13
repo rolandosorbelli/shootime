@@ -7,6 +7,7 @@ import Section from './Section'
 import './layout.css'
 import Faq from './Faq'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -45,10 +46,7 @@ const Layout = ({ children }) => {
       ))}
       <Faq content={faqs.faqs.content} />
       <Contact />
-      <footer>
-        <p>&copy; Copyright {new Date().getFullYear()}, Shootime.co.uk</p>
-        <p>All Rights Reserved</p>
-      </footer>
+      <Footer />
     </>
   )
 }
