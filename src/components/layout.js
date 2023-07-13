@@ -97,6 +97,11 @@ export const faqs = {
   faqs: {
     content: [
       {
+        question: 'Who are we?',
+        answer:
+          'London based company, Shootime Ltd is specialised in 360 photography, 3D digital twins and EPC. Established in 2022 the company has a team of professionals with a strong background in photography construction, architectural survey and project management.',
+      },
+      {
         question:
           'Do you carry out surveys and digital scans outside of normal business hours?',
         answer:

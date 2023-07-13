@@ -12,26 +12,72 @@ const Faq = ({ content }) => {
       <div className={`faq-container`} id="section-4">
         <div className={`faq-text`}>
           <h2>About & FAQs</h2>
-          {content?.map((faq, key) => (
-            <Accordion key={key}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls={`${key}-content`}
-                id={`${key}-header`}
-                className="faq-accordion"
-              >
-                <h3>{faq.question.toUpperCase()}</h3>
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>{faq.answer}</p>
-                <ul>
-                  {faq?.list?.map((li, key) => (
-                    <li key={key}>{li}</li>
-                  ))}
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          ))}
+          <div className="faq-accordion-container">
+            {content?.slice(0, 2).map((faq, key) => (
+              <Accordion key={key}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls={`${key}-content`}
+                  id={`${key}-header`}
+                  className="faq-accordion"
+                >
+                  <h3>{faq.question.toUpperCase()}</h3>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>{faq.answer}</p>
+                  <ul>
+                    {faq?.list?.map((li, key) => (
+                      <li key={key}>{li}</li>
+                    ))}
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+          <div className="faq-accordion-container">
+            {content?.slice(2, 10).map((faq, key) => (
+              <Accordion key={key}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls={`${key}-content`}
+                  id={`${key}-header`}
+                  className="faq-accordion"
+                >
+                  <h3>{faq.question.toUpperCase()}</h3>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>{faq.answer}</p>
+                  <ul>
+                    {faq?.list?.map((li, key) => (
+                      <li key={key}>{li}</li>
+                    ))}
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+          <div className="faq-accordion-container">
+            {content?.slice(10, 18).map((faq, key) => (
+              <Accordion key={key}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls={`${key}-content`}
+                  id={`${key}-header`}
+                  className="faq-accordion"
+                >
+                  <h3>{faq.question.toUpperCase()}</h3>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>{faq.answer}</p>
+                  <ul>
+                    {faq?.list?.map((li, key) => (
+                      <li key={key}>{li}</li>
+                    ))}
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
         </div>
       </div>
     </>
