@@ -159,9 +159,14 @@ input[type='reset'] {
 }
 
 .policy-outer {
-  padding: 6rem;
+  padding: 2rem;
   background-color: var(--color-light);
-  line-height: 200%;
+}
+
+@media (min-width: 60em) {
+  .policy-outer {
+    padding: 6rem;
+  }
 }
 
 .policy-outer h1 {
