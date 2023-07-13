@@ -1,4 +1,5 @@
 import React from 'react'
+import linkedin from '../../images/linkedin-icon.svg'
 
 import './index.scss'
 
@@ -10,6 +11,9 @@ const Footer = ({}) => {
           <h3>Shootime</h3>
           <p>86-90 Paul Street, London, EC2A 4NE</p>
           <p>Company Number: 14429115</p>
+          <a href="https://www.linkedin.com/company/shootime-ltd/">
+            <img src={linkedin} alt="LinkedIn page" className="linkedin"></img>
+          </a>
         </div>
         <div className="footer-upper__right">
           <div className="footer-upper__right-company">

@@ -13,6 +13,10 @@
 
     &__left {
       margin-bottom: 2rem;
+
+      & .linkedin {
+        margin-left: -5px;
+      }
     }
 
     &__right {
