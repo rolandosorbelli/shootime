@@ -37,7 +37,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/shootime.svg`, // This path is relative to the root of the site.
+        icon: `src/images/shootime4.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
