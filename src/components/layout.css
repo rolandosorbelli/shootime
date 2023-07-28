@@ -196,6 +196,7 @@ ul {
 .policy-outer a {
   color: var(--color-secondary);
   font-style: italic;
+  word-break: break-all;
 }
 
 .policy-outer a:hover {
