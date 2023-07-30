@@ -40,6 +40,9 @@ const Footer = ({}) => {
           <div className="footer-upper__right-legal">
             <h4>Legal</h4>
             <p>
+              <a href="/terms-and-conditions">Terms & Conditions</a>
+            </p>
+            <p>
               <a href="/privacy">Privacy Policy</a>
             </p>
             <p>
