@@ -1,0 +1,83 @@
+.footer {
+  padding: 2rem 2.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-s);
+
+  &-upper {
+    display: block;
+    border-bottom: 0.5px solid var(--color-light);
+    padding-block: 2rem;
+
+    &__left {
+      margin-bottom: 2rem;
+
+      & .linkedin {
+        margin-left: -5px;
+        display: inline-block;
+      }
+    }
+
+    &__right {
+      &-company {
+        margin-bottom: 1rem;
+      }
+      &-extra {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &-lower {
+    padding-block: 2rem;
+  }
+
+  @media (min-width: 80rem) {
+    padding: 2rem 6rem;
+    .footer {
+      &-upper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__left {
+          margin-bottom: 0px;
+        }
+
+        &__right {
+          display: flex;
+          flex-direction: row;
+          width: 400px;
+          justify-content: space-between;
+
+          &-company {
+            margin-bottom: 0px;
+          }
+          &-extra {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  & p {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-sans);
+    line-height: 1.8rem;
+  }
+
+  & h3 {
+    font-size: var(--font-size-m);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-bold);
+  }
+
+  & h4 {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-bold);
+  }
+}

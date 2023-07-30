@@ -1,0 +1,14 @@
+header {
+  margin: 2rem;
+
+  & img {
+    margin-bottom: 0;
+    width: 200px;
+    height: auto;
+  }
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
