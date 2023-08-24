@@ -21,6 +21,7 @@ input[type='submit'],
   background-color: var(--color-dark);
   display: block;
   padding: 2rem;
+  scroll-margin-top: 120px;
 
   & h2 {
     font-size: var(--font-size-l);

@@ -28,7 +28,7 @@ const Terms = ({ children }) => {
       >
         <main>
           <div className="policy-outer">
-            <h1>Terms & Conditions</h1>
+            <h1>Website Terms & Conditions</h1>
             <h2>Terms</h2>
             <p>
               By accessing this Website, accessible from

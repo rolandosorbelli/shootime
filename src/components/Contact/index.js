@@ -4,7 +4,7 @@ import './index.scss'
 
 const Contact = () => {
   return (
-    <div className="contact__section" id="section-5">
+    <div className="contact__section" id="contact">
       <h2>Contact</h2>
       <div className="contact__form">
         <div className="inner">

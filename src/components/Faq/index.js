@@ -9,9 +9,9 @@ import './index.scss'
 const Faq = ({ content }) => {
   return (
     <>
-      <div className={`faq-container`} id="section-4">
+      <div className={`faq-container`} id="about-and-faq">
         <div className={`faq-text`}>
-          <h2>About & FAQs</h2>
+          <h2>About & FAQ</h2>
           <div className="faq-accordion-container">
             {content?.slice(0, 2).map((faq, key) => (
               <Accordion key={key}>

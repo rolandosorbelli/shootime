@@ -19,22 +19,22 @@ const Footer = ({}) => {
           <div className="footer-upper__right-company">
             <h4>Company</h4>
             <p>
-              <a href="#section-1">360 Virtual Tours</a>
+              <a href="/#360-virtual-tours">360 Virtual Tours</a>
             </p>
             <p>
-              <a href="#section-2">Matterport</a>
+              <a href="/#matterport">Matterport</a>
             </p>
             <p>
-              <a href="#section-3">Domestic EPC</a>
+              <a href="/#depc">Domestic EPC</a>
             </p>
           </div>
           <div className="footer-upper__right-extra">
             <h4>Extra</h4>
             <p>
-              <a href="#section-4">About & FAQ</a>
+              <a href="/#about-and-faq">About & FAQ</a>
             </p>
             <p>
-              <a href="#section-5">Contact</a>
+              <a href="/#contact">Contact</a>
             </p>
           </div>
           <div className="footer-upper__right-legal">

@@ -33,28 +33,28 @@ const Navbar = ({ isIndex }) => {
   const navLinks = [
     {
       name: '360 Virtual Tours',
-      href: `${isIndex ? '#section-1' : '/#section-1'}`,
-      id: 'section-1',
+      href: `${isIndex ? '#360-virtual-tours' : '/#360-virtual-tours'}`,
+      id: '360-virtual-tours',
     },
     {
       name: 'Matterport',
-      href: `${isIndex ? '#section-2' : '/#section-2'}`,
-      id: 'section-2',
+      href: `${isIndex ? '#matterport' : '/#matterport'}`,
+      id: 'matterport',
     },
     {
       name: 'Domestic EPC',
-      href: `${isIndex ? '#section-3' : '/#section-3'}`,
-      id: 'section-3',
+      href: `${isIndex ? '#depc' : '/#depc'}`,
+      id: 'depc',
     },
     {
       name: 'About & FAQ',
-      href: `${isIndex ? '#section-4' : '/#section-4'}`,
-      id: 'section-4',
+      href: `${isIndex ? '#about-and-faq' : '/#about-and-faq'}`,
+      id: 'about-and-faq',
     },
     {
       name: 'Contact',
-      href: `${isIndex ? '#section-5' : '/#section-5'}`,
-      id: 'section-5',
+      href: `${isIndex ? '#contact' : '/#contact'}`,
+      id: 'contact',
     },
   ]
 

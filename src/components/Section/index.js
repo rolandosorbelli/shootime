@@ -11,6 +11,7 @@ const ImageDivider = ({
   style,
   position,
   inverted,
+  url,
 }) => {
   const control = useAnimation()
   const [ref, inView] = useInView({
@@ -33,10 +34,7 @@ const ImageDivider = ({
   }
 
   return (
-    <div
-      className={`section-container ${inverted ? 'inverted' : ''}`}
-      id={`section-${position}`}
-    >
+    <div className={`section-container ${inverted ? 'inverted' : ''}`} id={url}>
       <div className={`background ${imageSrc}`}></div>
       <div className={`section-text ${style}`}>
         <motion.h2 animate={control} variants={textVariant} initial="hidden">
