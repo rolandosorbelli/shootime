@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
         <Section
           title={section.title}
           content={section.content}
+          cases={section.cases}
           imageSrc={section.image}
           style={section.style}
           position={section.position}
@@ -75,6 +76,20 @@ export const sections = {
         'Matterport is the standard for 3D space capture that transforms real-life spaces into immersive digital twin models. So much more than panoramic scans, Matterport empowers people to capture and connect rooms to create truly interactive 3D models of spaces which they can be used for many scopes in different sectors (Real Estate, 3D Photography, Retail, Travel & Hospitality, Insurance & Restoration, Facilities Management, Heritage, Architecture, Engineering & Construction).',
         'Request your Matterport survey contacting Shootime Ltd and we will be happy to discuss your needs and goals, making sure to use the finest equipment and techniques expected for every high-end projects.',
       ],
+      cases: [
+        {
+          name: 'Showcase 1: Retail showroom in Fulham, SW6',
+          url: 'https://my.matterport.com/show/?m=6aqJ1qD1rYC',
+        },
+        {
+          name: 'Showcase 2: Real Estate marketing new flat on sale in Fulham, SW6',
+          url: 'https://my.matterport.com/show/?m=r9ozgDsKsko',
+        },
+        {
+          name: 'Showcase 3: Job site in Westminster, London, SW1',
+          url: 'https://my.matterport.com/show/?m=EPH2w2WTS6s',
+        },
+      ],
       image: 'image2',
       style: 'dark-section',
       position: 2,
@@ -101,7 +116,7 @@ export const faqs = {
       {
         question: 'Who are we?',
         answer:
-          'London based company, Shootime Ltd is specialised in 360 photography, 3D digital twins and EPC. Established in 2022 the company has a team of professionals with a strong background in photography construction, architectural survey and project management.',
+          'London based company, Shootime Ltd is specialised in 360 photography, 3D digital twins and EPC. The company has a team of professionals with a strong background in photography construction, architectural survey and project management.',
       },
       {
         question:
@@ -163,12 +178,12 @@ export const faqs = {
       {
         question: 'When do you need an EPC?',
         answer:
-          'EPCs became a legal requirement in England, Wales and Northern Ireland in 2008. The regulations set by the Department of Communities and Local Government (DCLG) require an EPC to be commissioned before a building is put on the market or it is rented. Your property&#39;s EPC needs to be available as soon as you start to market your property for sale or rent. It will inform people how energy efficient the property is and will cover any potential savings on fuel payments.',
+          'EPCs became a legal requirement in England, Wales and Northern Ireland in 2008. The regulations set by the Department of Communities and Local Government (DCLG) require an EPC to be commissioned before a building is put on the market or it is rented. Your property’s EPC needs to be available as soon as you start to market your property for sale or rent. It will inform people how energy efficient the property is and will cover any potential savings on fuel payments.',
       },
       {
         question: 'How long does it take to complete an EPC?',
         answer:
-          'One of our assessors will visit your property once agreed by email day and time slot for access. After completing the survey, the assessor will take 1-2 days to complete the EPC. Payment is required up-front the survey.',
+          'One of our assessors will visit your property once agreed by email day and time slot for access. After completing the survey, the assessor will take approximately 48h to complete the EPC if no others information are required to be collected post-survey. Payment is required up-front the survey.',
       },
       {
         question: 'What is needed to complete an EPC?',

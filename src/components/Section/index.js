@@ -7,6 +7,7 @@ import './index.scss'
 const ImageDivider = ({
   title,
   content,
+  cases,
   imageSrc,
   style,
   position,
@@ -51,6 +52,15 @@ const ImageDivider = ({
             {paraghraph}
           </motion.p>
         ))}
+        {cases?.length > 0 && (
+          <motion.ul animate={control} variants={textVariant} initial="hidden">
+            {cases?.map((caseStudy, key) => (
+              <li key={key}>
+                <a href={caseStudy.url}>{caseStudy.name}</a>
+              </li>
+            ))}
+          </motion.ul>
+        )}
       </div>
     </div>
   )

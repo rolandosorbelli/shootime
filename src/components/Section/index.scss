@@ -19,7 +19,9 @@
       margin-bottom: 1.5rem;
     }
 
-    & p {
+    & p,
+    a,
+    ul {
       font-size: var(--font-size-sm);
       font-family: var(--font-serif);
       line-height: 1.8rem;
@@ -27,6 +29,16 @@
 
     & p:first-of-type {
       margin-bottom: 1rem;
+    }
+
+    & ul {
+      margin-top: 1rem;
+    }
+
+    & a {
+      color: var(--color-secondary);
+      font-style: italic;
+      text-decoration: underline;
     }
   }
 }
@@ -46,7 +58,9 @@
         font-size: var(--font-size-xl);
       }
 
-      & p {
+      & p,
+      a,
+      ul {
         font-size: var(--font-size-m);
         line-height: 2rem;
       }

@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="hero-container__content">
         <h1>We make your world 360</h1>
         <button>
-          <a href="#section-5">GET A QUOTE</a>
+          <a href="#contact">GET A QUOTE</a>
           <img src={buttonArrow}></img>
         </button>
       </div>
