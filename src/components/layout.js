@@ -58,11 +58,32 @@ export default Layout
 export const sections = {
   sections: [
     {
-      title: '360 Virtual Tours',
-      url: '360-virtual-tours',
+      title: 'iGUIDE',
+      url: 'iguide',
       content: [
-        '360 virtual tours are created by stitching together single pictures to make one unique 360 image. Commonly used to boost the view experience for existing environments such real estates, retail and hospitality, 360 virtual tours provide a superior immersive way to virtually visit places. Viewers can use their mouse to rotate in all directions or go from one room to another. They can also zoom in on any area within the scene.',
-        'A 360 virtual tour is a brilliant interactive way to virtually view a property. Get in touch with Shootime Ltd to shoot and realize your bespoke 360 Virtual Tour.',
+        'Fast, accurate and providing flexible file types (PDF and DWG), iGUIDE allows us to create precise floor plans and immersive 3D tours for real estate listings, construction projects, insurance claims, facility management, commercial units, hospitality and retail venues. With iGUIDE, no monthly subscription is required for 3D virtual tours. Virtual tours can be hosted on our iGUIDE server for online visualisation and real-time collaboration with your team. Alternatively, when an extra layer of privacy is required, we can provide the offline package of the virtual tours which you can host on your own local server/Hard Disk. With iGUIDE you own your data, ensuring adherence to strict privacy policies when required.',
+      ],
+      cases: [
+        {
+          name: 'Commercial building',
+          url: 'https://youriguide.com/vS393GQWCVG8D1?pano=150&rotation=5.7712013236148945&elevation=-0.09348891079638744',
+        },
+        {
+          name: 'Luxury Real Estate',
+          url: 'https://youriguide.com/1805_this_way_home_dr_georgetown_ky',
+        },
+        {
+          name: 'Construction site (Pre, Post and Staged)',
+          url: 'https://youriguide.com/pre_and_post_construction',
+        },
+        {
+          name: 'Insurance claim (Fire)',
+          url: 'https://youriguide.com/i6qr7_1122_sample_road_kitchener_on?pano=456&rotation=0.4003933852048609&elevation=0.03532416470320378',
+        },
+        {
+          name: 'Tourism (Museum)',
+          url: 'https://youriguide.com/39_bygd_ynesveien_oslo_no_03_no',
+        },
       ],
       image: 'image1',
       style: 'light-section',
@@ -78,15 +99,15 @@ export const sections = {
       ],
       cases: [
         {
-          name: 'Showcase 1: Retail showroom in Fulham, SW6',
+          name: 'Retail showroom',
           url: 'https://my.matterport.com/show/?m=6aqJ1qD1rYC',
         },
         {
-          name: 'Showcase 2: Real Estate marketing new flat on sale in Fulham, SW6',
+          name: 'Real Estate marketing',
           url: 'https://my.matterport.com/show/?m=r9ozgDsKsko',
         },
         {
-          name: 'Showcase 3: Job site in Westminster, London, SW1',
+          name: 'Construction site',
           url: 'https://my.matterport.com/show/?m=EPH2w2WTS6s',
         },
       ],

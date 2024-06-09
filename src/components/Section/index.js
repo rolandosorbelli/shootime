@@ -56,7 +56,9 @@ const ImageDivider = ({
           <motion.ul animate={control} variants={textVariant} initial="hidden">
             {cases?.map((caseStudy, key) => (
               <li key={key}>
-                <a href={caseStudy.url}>{caseStudy.name}</a>
+                <a href={caseStudy.url} target="_blank">
+                  {caseStudy.name}
+                </a>
               </li>
             ))}
           </motion.ul>

@@ -32,9 +32,9 @@ const Navbar = ({ isIndex }) => {
 
   const navLinks = [
     {
-      name: '360 Virtual Tours',
-      href: `${isIndex ? '#360-virtual-tours' : '/#360-virtual-tours'}`,
-      id: '360-virtual-tours',
+      name: 'iGuide',
+      href: `${isIndex ? '#iguide' : '/#iguide'}`,
+      id: 'iguide',
     },
     {
       name: 'Matterport',
