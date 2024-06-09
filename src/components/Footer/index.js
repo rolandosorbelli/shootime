@@ -37,7 +37,7 @@ const Footer = ({}) => {
           <div className="footer-upper__right-company">
             <h4>Company</h4>
             <p>
-              <a href="/#360-virtual-tours">360 Virtual Tours</a>
+              <a href="/#iguide">iGuide</a>
             </p>
             <p>
               <a href="/#matterport">Matterport</a>
@@ -70,8 +70,8 @@ const Footer = ({}) => {
         </div>
       </div>
       <div className="footer-center">
-        <img src={logo1} alt="iGuide Logo" />
-        <img src={logo2} alt="Matterport Logo" />
+        <img src={logo1} alt="iGuide Logo" className="iguide" />
+        <img src={logo2} alt="Matterport Logo" className="matterport" />
         <img src={logo3} alt="Elmhurst energy Logo" />
         <img
           src={logo4}

@@ -43,12 +43,13 @@
 
   &-center {
     margin-left: -6rem;
-    margin-right: -6rem;
+    margin-right: -2.5rem;
     padding-left: 6rem;
     padding-right: 6rem;
     background-color: rgba(0, 0, 0, 0.3);
     padding-block: 3rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
@@ -56,6 +57,14 @@
     & img {
       max-height: 50px;
       width: auto;
+    }
+
+    & .iguide {
+      max-height: 70px;
+    }
+
+    & .matterport {
+      max-height: 40px;
     }
   }
 
@@ -88,6 +97,10 @@
             margin-bottom: 0px;
           }
         }
+      }
+
+      &-center {
+        margin-right: -6rem;
       }
     }
   }
