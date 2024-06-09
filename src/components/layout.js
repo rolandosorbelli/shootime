@@ -73,15 +73,15 @@ export const sections = {
           url: 'https://youriguide.com/1805_this_way_home_dr_georgetown_ky',
         },
         {
-          name: 'Construction site (Pre, Post and Staged)',
+          name: 'Construction site - Pre, Post and Staged',
           url: 'https://youriguide.com/pre_and_post_construction',
         },
         {
-          name: 'Insurance claim (Fire)',
+          name: 'Insurance claim - Fire',
           url: 'https://youriguide.com/i6qr7_1122_sample_road_kitchener_on?pano=456&rotation=0.4003933852048609&elevation=0.03532416470320378',
         },
         {
-          name: 'Tourism (Museum)',
+          name: 'Museum',
           url: 'https://youriguide.com/39_bygd_ynesveien_oslo_no_03_no',
         },
       ],
