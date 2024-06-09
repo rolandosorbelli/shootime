@@ -8,15 +8,26 @@
 
   &-upper {
     display: block;
-    border-bottom: 0.5px solid var(--color-light);
     padding-block: 2rem;
 
     &__left {
       margin-bottom: 2rem;
 
-      & .linkedin {
-        margin-left: -5px;
-        display: inline-block;
+      &-logos {
+        display: block;
+
+        & .linkedin {
+          width: 50px;
+          height: auto;
+          margin-left: -5px;
+          display: inline-block;
+        }
+
+        & .instagram {
+          width: 50px;
+          height: auto;
+          display: inline-block;
+        }
       }
     }
 
@@ -27,6 +38,24 @@
       &-extra {
         margin-bottom: 1rem;
       }
+    }
+  }
+
+  &-center {
+    margin-left: -6rem;
+    margin-right: -6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-block: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & img {
+      max-height: 50px;
+      width: auto;
     }
   }
 
