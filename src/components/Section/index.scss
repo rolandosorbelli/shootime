@@ -50,6 +50,10 @@
     flex-direction: row;
     height: 600px;
 
+    & .background {
+      width: auto;
+    }
+
     & .section-text {
       padding: 6rem;
       display: flex;
